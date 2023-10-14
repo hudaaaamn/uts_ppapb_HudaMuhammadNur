@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:background="@drawable/home_bg">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_hello"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/hello"/>
+
+    <TextView
+        android:id="@+id/TopMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Top"
+        android:textColor="@color/white"
+        android:layout_marginLeft="22dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        android:layout_marginTop="35dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="130dp"
+        tools:layout_editor_absoluteX="1dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEADPOOL"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="70dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAIN TO BUSAN"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="65dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVENGERS"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="70dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIJJIN"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="65dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WARCRAFT"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="70dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/film6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="33dp"
+                    android:src="@drawable/film10"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GATOTKACA"
+                    android:background="@color/deep_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:id="@+id/btg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btg"
+                    android:layout_marginLeft="65dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
