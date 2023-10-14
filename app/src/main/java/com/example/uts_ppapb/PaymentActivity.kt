@@ -28,7 +28,8 @@ class PaymentActivity : AppCompatActivity() {
         const val EXTRA_TOTAL_PAYMENT="EXTRA_TOTAL_PAYMENT"
         const val EXTRA_TIME="EXTRA_TIME"
         const val EXTRA_METHOD="EXTRA_METHOD"
-    }
+    } //mendefinisikan konstanta yang dapat diakses tanpa
+    // membuat instance dari kelasnya.
 
     private lateinit var datePickers: EditText
     private lateinit var timePicker: EditText
@@ -39,7 +40,6 @@ class PaymentActivity : AppCompatActivity() {
     var TotalPayment=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
 
 
         super.onCreate(savedInstanceState)

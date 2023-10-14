@@ -29,6 +29,7 @@ class HomeActivity : AppCompatActivity() {
         // Menampilkan data di TextView
         usernameTextView.text = "$username"
 
+        // mendapatkan referensi ke elemen ImageView dengan ID "film1"
         val imageView = binding.film1
         imageView.setOnClickListener {
             val intent = Intent(this, DetailActivity::class.java)
